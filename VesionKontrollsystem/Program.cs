@@ -4,25 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Person person1 = new Person("Fab", "Dyl", 15);
-            Person person2 = new Person("Siut", "WIOU", 51);
-
-            int result = person1.CompareTo(person2);
-            if (result<0)
+            Person [] personen = new Person[]
             {
-                Console.WriteLine($"{person1.Name} ist junger alt {person2.Name} ");
-            }
-            if (result==0)
+                  person1 ("Fab", "Dyl", 15),
+                  person2 ("Siut", "WIOU", 10)
+            };
+            Array.Sort(personen);
+            foreach (Person p in personen)
             {
-                Console.WriteLine($"{person1.Name} ist gleicher alt {person2.Name} ");
-            }
-            if (result>0)
-            {
-                Console.WriteLine($"{person1.Name} ist junger alt {person2.Name} ");
+                Console.WriteLine($"{p.Name} : {p.Alt}");
             }
         }
     }
-        class Person
+        class Person : IComparable<Person>
         {
             public string Name {get; set;}
             public string Vorname {get; set;}
