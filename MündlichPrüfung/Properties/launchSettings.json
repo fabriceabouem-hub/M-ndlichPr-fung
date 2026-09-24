@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MündlichPrüfung": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

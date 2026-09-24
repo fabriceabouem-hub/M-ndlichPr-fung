@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Classement/Classement.csproj" />
+  <Project Path="delegate/Notion_deleg.csproj" />
+  <Project Path="MündlichPrüfung/MündlichPrüfung.csproj" />
+  <Project Path="VesionKontrollsystem/VesionKontrollsystem.csproj" />
+</Solution>
