@@ -6,8 +6,8 @@
         {
             Person [] personen = new Person[]
             {
-                  person1 ("Fab", "Dyl", 15),
-                  person2 ("Siut", "WIOU", 10)
+                 new Person ("Fab", "Dyl", 15 ),
+                 new Person ("Siut", "WIOU", 10)
             };
             Array.Sort(personen);
             foreach (Person p in personen)
