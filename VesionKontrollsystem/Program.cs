@@ -6,18 +6,19 @@
         {
             Person person1 = new Person("Fab", "Dyl", 15);
             Person person2 = new Person("Siut", "WIOU", 51);
+
             int result = person1.CompareTo(person2);
             if (result<0)
             {
-                Console.WriteLine($"{persone1.Name} ist junger alt {person2.Name} ");
+                Console.WriteLine($"{person1.Name} ist junger alt {person2.Name} ");
             }
             if (result==0)
             {
-                Console.WriteLine($"{persone1.Name} ist gleicher alt {person2.Name} ");
+                Console.WriteLine($"{person1.Name} ist gleicher alt {person2.Name} ");
             }
             if (result>0)
             {
-                Console.WriteLine($"{persone1.Name} ist junger alt {person2.Name} ");
+                Console.WriteLine($"{person1.Name} ist junger alt {person2.Name} ");
             }
         }
     }
@@ -36,7 +37,7 @@
             {
                 if(other == null) return 1;
                {
-                  return Alt.CompareTo (other Alt) ;
+                  return Alt.CompareTo(other.Alt) ;
                }
             }
         }
